@@ -24,7 +24,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 92vw; /* Faz o layout ocupar exatamente a proporção da imagem de referência */
+    max-width: 92vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,9 +60,27 @@ body {
 
 .username {
     font-size: 0.95rem;
-    color: #163251;
     margin-bottom: 16px;
+}
+
+.username a {
+    color: #163251;
+    text-decoration: none;
     font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: opacity 0.2s ease;
+}
+
+.username a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.username i {
+    font-size: 1.1rem;
+    color: #C13584; /* Cor clássica do ícone do Instagram */
 }
 
 /* Card Principal */
