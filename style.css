@@ -24,7 +24,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 420px;
+    max-width: 440px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,8 +33,8 @@ body {
 
 /* Foto de Perfil */
 .profile-img-container {
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     border: 4px solid #ffffff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -52,14 +52,14 @@ body {
 
 /* Nomes */
 .name {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: #0b1f36;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
 }
 
 .username {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: #163251;
     margin-bottom: 18px;
     font-weight: 600;
@@ -70,21 +70,21 @@ body {
     background: linear-gradient(135deg, #0d3b66, #1d4ed8);
     color: #ffffff;
     width: 100%;
-    padding: 18px 16px;
-    border-radius: 18px;
+    padding: 20px 18px;
+    border-radius: 20px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    margin-bottom: 16px;
+    margin-bottom: 18px;
 }
 
 .hero-card h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 700;
     line-height: 1.3;
     margin-bottom: 6px;
 }
 
 .hero-card p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: #fde047;
     font-weight: 500;
 }
@@ -94,7 +94,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 14px;
 }
 
 .btn {
@@ -102,30 +102,25 @@ body {
     align-items: center;
     background: rgba(13, 59, 102, 0.95);
     color: #ffffff;
-    padding: 14px 18px;
+    padding: 16px 20px;
     border-radius: 35px;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     font-weight: 600;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     width: 100%;
-    transition: transform 0.2s ease;
-}
-
-.btn:active {
-    transform: scale(0.98);
 }
 
 .btn i {
-    font-size: 1.2rem;
-    margin-right: 12px;
+    font-size: 1.3rem;
+    margin-right: 14px;
     min-width: 24px;
     text-align: center;
 }
 
 .btn span {
     flex: 1;
-    line-height: 1.25;
+    line-height: 1.3;
     text-align: left;
 }
 
@@ -133,56 +128,12 @@ body {
     background: rgba(15, 118, 110, 0.95);
 }
 
-/* ===== AJUSTE ESPECÍFICO DE RESPONSIVIDADE PARA CELULAR ===== */
+/* Ajuste inteligente para telas de celular */
 @media screen and (max-width: 480px) {
     body {
-        padding: 15px 12px;
-        align-items: flex-start; /* Permite rolar suavemente caso a tela seja menor */
+        padding: 15px 10px;
     }
-
     .container {
         max-width: 100%;
-    }
-
-    .profile-img-container {
-        width: 105px;
-        height: 105px;
-        border-width: 3px;
-        margin-bottom: 10px;
-    }
-
-    .name {
-        font-size: 1.05rem;
-        padding: 0 5px;
-    }
-
-    .username {
-        font-size: 0.85rem;
-        margin-bottom: 14px;
-    }
-
-    .hero-card {
-        padding: 15px 14px;
-        border-radius: 14px;
-        margin-bottom: 14px;
-    }
-
-    .hero-card h2 {
-        font-size: 1.1rem;
-    }
-
-    .hero-card p {
-        font-size: 0.85rem;
-    }
-
-    .btn {
-        padding: 13px 16px;
-        font-size: 0.85rem;
-        border-radius: 30px;
-    }
-
-    .btn i {
-        font-size: 1.1rem;
-        margin-right: 10px;
     }
 }
